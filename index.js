@@ -6,11 +6,13 @@ function getComputerChoice(){
 }
  getComputerChoice();
 
-function playerChoice(){
-    const userChoice = window.prompt('Enter rock, paper or scissors');
+function getPlayerChoice(){
+    const userChoice = window.prompt('Enter rock, paper or scissors').trim().toLowerCase();
     if (!["rock", "paper", "scissors"].includes(userChoice)) {
         window.alert("please choose rock or paper or scissors")
     }
     else{
         console.log(userChoice)
     };
+}
+getPlayerChoice()
